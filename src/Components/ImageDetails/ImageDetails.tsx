@@ -37,7 +37,7 @@ const ImageDetails: FC<ImageDetailsProps> = ({ imageResult }) => {
         Image Author: {imageResult.user || imageResult.user_id}
       </div>
       <div className={styles.text}>
-        {imageResult.tags}
+        Tags: {imageResult.tags}
       </div>
       <img src={imageResult.largeImageURL} alt={imageResult.tags}/>
     </div>
